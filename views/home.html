@@ -1,0 +1,28 @@
+<section id="search">
+  <h2>Welcome to Rocky Mountain Hops!</h2>
+  <p class="lead">
+    Use the search box below to return brewery information for the Boulder area...
+  </p>
+  <p>
+    Sidenote: Make sure CORS extension is turned on in your browser
+
+  </p>
+
+
+<div class="input-group">
+    <input type="text" class="form-control" ng-model="main.beerSearch" placeholder="Search for beer heaven..." name="srch-term" id="srch-term">
+    <div class="input-group-btn">
+        <button class="btn btn-default btn-success" type="submit">
+          <i class="glyphicon glyphicon-search"></i>
+        </button>
+    </div>
+</div>
+<div class="inner cover" ng-show="main.beerSearch">
+    <h1
+      ng-repeat="beer in main.beerData.data | filter:main.beerSearch"
+      ng-click="main.selectBrewery()"
+      >
+      {{beer.brewery.name}} <br />{{beer.streetAddress}} <br /> {{beer.phone}} <br /><a class="link" ng-href="{{ beer.brewery.website }}">Website</a>
+    </h1>
+</div>
+</section>

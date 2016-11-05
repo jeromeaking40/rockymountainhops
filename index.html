@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="rockyMtnHops">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rocky Mountain Hops!</title>
+    <link rel="shortcut icon" href="/IMG/beerfavicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ewert|Open+Sans|Taviraj" rel="stylesheet">
+    <link rel="stylesheet" href="cover.css" />
+    <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body  ng-controller="mainCtrl as main">
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Rocky Mountain Hops</h3>
+                        <!--NAVIGATION-->
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li class="active"><a href="#/">Home</a></li>
+                                <li><a href="#/contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!--END OF NAVIGATION-->
+                    </div>
+                </div>
+
+                <!--CONTENT-->
+                <ng-view></ng-view>
+                <!--END OF CONTENT-->
+
+                    <!--FOOTER-->
+                    <div class="mastfoot">
+                        <div class="inner">
+                            <h2 class="footertime">Brought to you courtesy of J<sup>3</sup>T.js</h2>
+                        </div>
+                    </div>
+                    <!--END OF FOOTER-->
+                </div>
+            </div>
+        </div>
+
+
+  <!--CONTROLLER-->
+  <script src="controller/mainCtrl.js"></script>
+</body>
+
+</html>
