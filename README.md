@@ -1,4 +1,4 @@
 Rocky Mountain Hops
 
-Brewery finder for the Boulder, Colorado Area
+Brewery finder for the Denver, Colorado Area
 ReFactorU Hack-a-thon Application
